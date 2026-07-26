@@ -461,22 +461,76 @@ button { cursor: pointer; border: none; background: none; }
 .instruments { background: var(--inst-bg); transition: background 0.6s ease; }
 .instruments .section-label, .instruments .title-ornament { color: var(--gold); }
 .instruments .section-title { color: var(--gold-light); }
+
 .instruments-wheel {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
+/* 4 columns on wide desktop */
+@media (min-width: 900px) {
+  .instruments-wheel { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1100px) {
+  .instruments-wheel { grid-template-columns: repeat(6, 1fr); }
+}
+
 .instrument-item {
-  background: rgba(255,255,255,.06); border: 1px solid rgba(212,160,23,.25);
-  border-radius: var(--radius); padding: 28px 16px; text-align: center;
-  display: flex; flex-direction: column; align-items: center; gap: 12px;
-  transition: var(--transition); cursor: default;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(212,160,23,.25);
+  border-radius: var(--radius);
+  padding: 24px 12px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+  cursor: default;
+  width: 100%;
+  box-sizing: border-box;
 }
 .instrument-item:hover {
-  background: rgba(212,160,23,.15); border-color: var(--gold);
+  background: rgba(212,160,23,.15);
+  border-color: var(--gold);
   transform: scale(1.05);
 }
+
+.inst-svg {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+.inst-svg svg {
+  width: 100%;
+  height: 100%;
+}
 .inst-emoji { font-size: 2.4rem; }
-.instrument-item span:last-child { color: var(--cream); font-size: 0.95rem; font-weight: 600; }
+
+/* instrument name */
+.instrument-item span:nth-child(2) {
+  color: var(--cream);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.inst-hindi {
+  font-family: var(--font-hindi);
+  color: var(--gold-light) !important;
+  font-size: 0.82rem !important;
+  font-weight: 400 !important;
+  line-height: 1.2;
+}
+
+/* 2-column on small phones */
+@media (max-width: 480px) {
+  .instruments-wheel { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .instrument-item   { padding: 18px 8px 14px; }
+  .inst-svg          { width: 46px; height: 46px; }
+  .instrument-item span:nth-child(2) { font-size: 0.85rem; }
+  .inst-hindi        { font-size: 0.75rem !important; }
+}
 
 /* ============================================
    PERFORMANCES
@@ -790,16 +844,16 @@ video:not(:has(source[src])) ~ .video-placeholder-label {
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom .container { flex-direction: column; text-align: center; }
   .testimonial-card { padding: 28px 24px; }
-  .instruments-wheel { grid-template-columns: repeat(3, 1fr); }
   .prayag-grid { grid-template-columns: repeat(2, 1fr); }
+  /* instruments handled by its own breakpoints above */
 }
 
 @media (max-width: 480px) {
   .gallery-item.g-large, .gallery-item.g-wide { grid-column: span 2; }
-  .instruments-wheel { grid-template-columns: repeat(2, 1fr); }
   .faculty-grid { grid-template-columns: 1fr; }
   .prayag-grid { grid-template-columns: 1fr; }
   .affil-badge { font-size: 0.82rem; padding: 8px 14px; }
+  /* instruments 2-col handled above */
 }
 
 /* ============================================
@@ -833,6 +887,7 @@ video:not(:has(source[src])) ~ .video-placeholder-label {
   border-radius: 16px;
   padding: 16px;
   min-width: 220px;
+  max-width: 90vw;       /* never wider than viewport */
   box-shadow: var(--shadow-lg);
   opacity: 0;
   pointer-events: none;
@@ -989,54 +1044,6 @@ body {
 .course-icon-svg svg {
   width: 100%;
   height: 100%;
-}
-
-/* ============================================
-   INSTRUMENTS — SVG overhaul
-   ============================================ */
-.instruments-wheel {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 24px;
-  justify-items: center;
-}
-.instrument-item {
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(212,160,23,.25);
-  border-radius: var(--radius);
-  padding: 28px 16px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  transition: var(--transition);
-  cursor: default;
-  width: 100%;
-}
-.instrument-item:hover {
-  background: rgba(212,160,23,.15);
-  border-color: var(--gold);
-  transform: scale(1.06);
-}
-.inst-svg {
-  width: 64px;
-  height: 64px;
-}
-.inst-svg svg {
-  width: 100%;
-  height: 100%;
-}
-.instrument-item span:nth-child(2) {
-  color: var(--cream);
-  font-size: 1rem;
-  font-weight: 700;
-}
-.inst-hindi {
-  font-family: var(--font-hindi);
-  color: var(--gold-light) !important;
-  font-size: 0.88rem !important;
-  font-weight: 400 !important;
 }
 
 /* ============================================

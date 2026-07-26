@@ -2,28 +2,162 @@
    SUR SANGAM SANGEET KALA KENDRA — STYLES
    ============================================ */
 
-:root {
-  --saffron:     #E8621A;
-  --deep-red:    #A0192A;
-  --gold:        #D4A017;
-  --gold-light:  #F0C040;
-  --cream:       #FDF6E3;
-  --cream-dark:  #F5E8C7;
-  --brown:       #5C2D0A;
-  --deep-brown:  #3A1A05;
-  --teal:        #1A6B6B;
-  --text-dark:   #2A1208;
-  --text-mid:    #5A3010;
-  --text-light:  #8A6040;
-  --white:       #FFFFFF;
+/* ============================================
+   THEME: RAGA SUNRISE (default — saffron/gold)
+   ============================================ */
+:root,
+[data-theme="raga-sunrise"] {
+  --saffron:        #E8621A;
+  --deep-red:       #A0192A;
+  --gold:           #D4A017;
+  --gold-light:     #F0C040;
+  --cream:          #FDF6E3;
+  --cream-dark:     #F5E8C7;
+  --brown:          #5C2D0A;
+  --deep-brown:     #3A1A05;
+  --teal:           #1A6B6B;
+  --text-dark:      #2A1208;
+  --text-mid:       #5A3010;
+  --text-light:     #8A6040;
+  --white:          #FFFFFF;
 
-  --font-display: 'Cinzel Decorative', serif;
-  --font-body:    'Crimson Text', serif;
-  --font-hindi:   'Noto Serif Devanagari', serif;
+  --hero-bg:        linear-gradient(135deg, #3A1A05 0%, #6B1A0A 40%, #2A0A2A 100%);
+  --stats-bg:       linear-gradient(135deg, #A0192A, #3A1A05);
+  --inst-bg:        linear-gradient(135deg, #3A1A05 0%, #6B1A0A 100%);
+  --navbar-bg:      rgba(58,26,5,0.95);
+  --navbar-bg-full: rgba(58,26,5,1);
+  --fall-colors:    #E8621A,#D4A017,#F0C040,#FFFFFF,#FFD700;
 
   --shadow-sm:  0 2px 8px rgba(92,45,10,.12);
   --shadow-md:  0 6px 24px rgba(92,45,10,.18);
   --shadow-lg:  0 12px 48px rgba(92,45,10,.25);
+}
+
+/* ============================================
+   THEME: RAATRI RAAG (midnight blue)
+   ============================================ */
+[data-theme="raatri-raag"] {
+  --saffron:        #7B9FFF;
+  --deep-red:       #1A2A6C;
+  --gold:           #B8CEFF;
+  --gold-light:     #D0E4FF;
+  --cream:          #0D1B3E;
+  --cream-dark:     #162040;
+  --brown:          #2A3F7A;
+  --deep-brown:     #0A1228;
+  --teal:           #4A90D9;
+  --text-dark:      #E8F0FF;
+  --text-mid:       #A0B8E8;
+  --text-light:     #6888CC;
+  --white:          #FFFFFF;
+
+  --hero-bg:        linear-gradient(135deg, #060D1F 0%, #0D1B3E 40%, #1A0A4A 100%);
+  --stats-bg:       linear-gradient(135deg, #1A2A6C, #0A1228);
+  --inst-bg:        linear-gradient(135deg, #0A1228 0%, #1A2A6C 100%);
+  --navbar-bg:      rgba(6,13,31,0.95);
+  --navbar-bg-full: rgba(6,13,31,1);
+  --fall-colors:    #7B9FFF,#B8CEFF,#4A90D9,#FFFFFF,#D0E4FF;
+
+  --shadow-sm:  0 2px 8px rgba(10,18,40,.35);
+  --shadow-md:  0 6px 24px rgba(10,18,40,.5);
+  --shadow-lg:  0 12px 48px rgba(10,18,40,.65);
+}
+
+/* ============================================
+   THEME: VRINDAVAN (bamboo green — bansuri)
+   ============================================ */
+[data-theme="vrindavan"] {
+  --saffron:        #4CAF50;
+  --deep-red:       #1B5E20;
+  --gold:           #8BC34A;
+  --gold-light:     #CCFF90;
+  --cream:          #F1F8E9;
+  --cream-dark:     #DCEDC8;
+  --brown:          #2E7D32;
+  --deep-brown:     #1A3A1C;
+  --teal:           #00796B;
+  --text-dark:      #1B2E1C;
+  --text-mid:       #2E6830;
+  --text-light:     #558B2F;
+  --white:          #FFFFFF;
+
+  --hero-bg:        linear-gradient(135deg, #1A3A1C 0%, #2E5A30 40%, #0A2A1A 100%);
+  --stats-bg:       linear-gradient(135deg, #1B5E20, #1A3A1C);
+  --inst-bg:        linear-gradient(135deg, #1A3A1C 0%, #2E5A30 100%);
+  --navbar-bg:      rgba(26,58,28,0.95);
+  --navbar-bg-full: rgba(26,58,28,1);
+  --fall-colors:    #4CAF50,#8BC34A,#CCFF90,#FFFFFF,#A5D6A7;
+
+  --shadow-sm:  0 2px 8px rgba(27,94,32,.15);
+  --shadow-md:  0 6px 24px rgba(27,94,32,.22);
+  --shadow-lg:  0 12px 48px rgba(27,94,32,.3);
+}
+
+/* ============================================
+   THEME: THUMRI ROSE (rose/magenta)
+   ============================================ */
+[data-theme="thumri-rose"] {
+  --saffron:        #E91E8C;
+  --deep-red:       #880E4F;
+  --gold:           #FF80AB;
+  --gold-light:     #FFD6EC;
+  --cream:          #FFF0F7;
+  --cream-dark:     #FFD6EC;
+  --brown:          #AD1457;
+  --deep-brown:     #4A0028;
+  --teal:           #C2185B;
+  --text-dark:      #3A0020;
+  --text-mid:       #880E4F;
+  --text-light:     #C2185B;
+  --white:          #FFFFFF;
+
+  --hero-bg:        linear-gradient(135deg, #4A0028 0%, #880E4F 40%, #2A0038 100%);
+  --stats-bg:       linear-gradient(135deg, #880E4F, #4A0028);
+  --inst-bg:        linear-gradient(135deg, #4A0028 0%, #880E4F 100%);
+  --navbar-bg:      rgba(74,0,40,0.95);
+  --navbar-bg-full: rgba(74,0,40,1);
+  --fall-colors:    #E91E8C,#FF80AB,#FFD6EC,#FFFFFF,#FF4081;
+
+  --shadow-sm:  0 2px 8px rgba(136,14,79,.15);
+  --shadow-md:  0 6px 24px rgba(136,14,79,.22);
+  --shadow-lg:  0 12px 48px rgba(136,14,79,.3);
+}
+
+/* ============================================
+   THEME: MONSOON MALHAR (slate/silver/rain)
+   ============================================ */
+[data-theme="monsoon-malhar"] {
+  --saffron:        #78909C;
+  --deep-red:       #263238;
+  --gold:           #B0BEC5;
+  --gold-light:     #ECEFF1;
+  --cream:          #ECEFF1;
+  --cream-dark:     #CFD8DC;
+  --brown:          #455A64;
+  --deep-brown:     #102027;
+  --teal:           #00838F;
+  --text-dark:      #102027;
+  --text-mid:       #37474F;
+  --text-light:     #607D8B;
+  --white:          #FFFFFF;
+
+  --hero-bg:        linear-gradient(135deg, #102027 0%, #263238 40%, #0A1520 100%);
+  --stats-bg:       linear-gradient(135deg, #263238, #102027);
+  --inst-bg:        linear-gradient(135deg, #102027 0%, #263238 100%);
+  --navbar-bg:      rgba(16,32,39,0.95);
+  --navbar-bg-full: rgba(16,32,39,1);
+  --fall-colors:    #B0BEC5,#ECEFF1,#78909C,#FFFFFF,#80CBC4;
+
+  --shadow-sm:  0 2px 8px rgba(16,32,39,.2);
+  --shadow-md:  0 6px 24px rgba(16,32,39,.3);
+  --shadow-lg:  0 12px 48px rgba(16,32,39,.4);
+}
+
+/* ---- Shared non-theme tokens ---- */
+:root {
+  --font-display: 'Cinzel Decorative', serif;
+  --font-body:    'Crimson Text', serif;
+  --font-hindi:   'Noto Serif Devanagari', serif;
   --radius:     12px;
   --transition: 0.3s ease;
 }
@@ -55,12 +189,12 @@ button { cursor: pointer; border: none; background: none; }
    ============================================ */
 #navbar {
   position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
-  background: rgba(58, 26, 5, 0.95);
+  background: var(--navbar-bg);
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--gold);
-  transition: var(--transition);
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
-#navbar.scrolled { background: rgba(58, 26, 5, 1); box-shadow: var(--shadow-md); }
+#navbar.scrolled { background: var(--navbar-bg-full); box-shadow: var(--shadow-md); }
 
 .nav-container {
   max-width: 1200px; margin: 0 auto; padding: 0 20px;
@@ -90,15 +224,27 @@ button { cursor: pointer; border: none; background: none; }
   background: var(--cream); border-radius: 2px;
   transition: var(--transition);
 }
+.nav-actions {
+  display: flex; align-items: center; gap: 8px;
+}
+.theme-toggle {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(212,160,23,0.4);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; cursor: pointer; transition: var(--transition);
+}
+.theme-toggle:hover { background: rgba(212,160,23,0.2); }
 
 /* ============================================
    HERO
    ============================================ */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--deep-brown) 0%, #6B1A0A 40%, #2A0A2A 100%);
+  background: var(--hero-bg);
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden; text-align: center;
+  transition: background 0.6s ease;
 }
 .hero-overlay {
   position: absolute; inset: 0;
@@ -194,9 +340,10 @@ button { cursor: pointer; border: none; background: none; }
    STATS STRIP
    ============================================ */
 .stats-strip {
-  background: linear-gradient(135deg, var(--deep-red), var(--deep-brown));
+  background: var(--stats-bg);
   padding: 36px 20px;
   border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold);
+  transition: background 0.6s ease;
 }
 .stats-container {
   max-width: 1000px; margin: 0 auto;
@@ -311,7 +458,7 @@ button { cursor: pointer; border: none; background: none; }
 /* ============================================
    INSTRUMENTS
    ============================================ */
-.instruments { background: linear-gradient(135deg, var(--deep-brown) 0%, #6B1A0A 100%); }
+.instruments { background: var(--inst-bg); transition: background 0.6s ease; }
 .instruments .section-label, .instruments .title-ornament { color: var(--gold); }
 .instruments .section-title { color: var(--gold-light); }
 .instruments-wheel {
@@ -644,12 +791,423 @@ video:not(:has(source[src])) ~ .video-placeholder-label {
   .footer-bottom .container { flex-direction: column; text-align: center; }
   .testimonial-card { padding: 28px 24px; }
   .instruments-wheel { grid-template-columns: repeat(3, 1fr); }
+  .prayag-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 480px) {
   .gallery-item.g-large, .gallery-item.g-wide { grid-column: span 2; }
   .instruments-wheel { grid-template-columns: repeat(2, 1fr); }
   .faculty-grid { grid-template-columns: 1fr; }
+  .prayag-grid { grid-template-columns: 1fr; }
+  .affil-badge { font-size: 0.82rem; padding: 8px 14px; }
+}
+
+/* ============================================
+   THEME PICKER
+   ============================================ */
+.theme-picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.theme-picker-btn {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  border: 1.5px solid rgba(255,255,255,0.3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; cursor: pointer;
+  transition: var(--transition);
+  color: var(--gold-light);
+}
+.theme-picker-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: rotate(20deg) scale(1.1);
+}
+
+.theme-picker-panel {
+  position: absolute;
+  top: calc(100% + 14px);
+  right: 0;
+  background: var(--deep-brown);
+  border: 1.5px solid var(--gold);
+  border-radius: 16px;
+  padding: 16px;
+  min-width: 220px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px) scale(0.97);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 2000;
+}
+.theme-picker-panel.open {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0) scale(1);
+}
+.theme-picker-label {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  text-align: center;
+}
+.theme-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: var(--transition);
+  background: transparent;
+  width: 100%;
+  text-align: left;
+}
+.theme-option:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.2);
+}
+.theme-option.active {
+  border-color: var(--gold);
+  background: rgba(255,255,255,0.1);
+}
+.theme-swatch {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.3);
+  position: relative;
+  overflow: hidden;
+}
+.theme-swatch::before,
+.theme-swatch::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 50%;
+}
+.theme-swatch::before { left: 0; }
+.theme-swatch::after  { right: 0; }
+
+/* Swatch colour splits per theme */
+.swatch-raga-sunrise::before   { background: #E8621A; }
+.swatch-raga-sunrise::after    { background: #D4A017; }
+.swatch-raatri-raag::before    { background: #1A2A6C; }
+.swatch-raatri-raag::after     { background: #7B9FFF; }
+.swatch-vrindavan::before      { background: #1B5E20; }
+.swatch-vrindavan::after       { background: #8BC34A; }
+.swatch-thumri-rose::before    { background: #880E4F; }
+.swatch-thumri-rose::after     { background: #FF80AB; }
+.swatch-monsoon-malhar::before { background: #263238; }
+.swatch-monsoon-malhar::after  { background: #B0BEC5; }
+
+.theme-option-name {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--cream);
+  line-height: 1.2;
+}
+.theme-option-sub {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  display: block;
+}
+
+/* ============================================
+   FALLING SYMBOLS OVERLAY
+   ============================================ */
+#themeFallOverlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+.fall-sym {
+  position: absolute;
+  top: -60px;
+  font-size: 1.6rem;
+  opacity: 0;
+  animation: fallDown linear forwards;
+  user-select: none;
+  will-change: transform, opacity;
+}
+@keyframes fallDown {
+  0%   { transform: translateY(0)    rotate(0deg)   scale(0.8); opacity: 0; }
+  8%   { opacity: 0.9; }
+  85%  { opacity: 0.7; }
+  100% { transform: translateY(110vh) rotate(540deg) scale(1.2); opacity: 0; }
+}
+
+/* body-level smooth colour transition when theme changes */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.hero-affiliation {
+  margin-top: 28px;
+}
+.affil-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(212,160,23,0.15);
+  border: 1.5px solid rgba(212,160,23,0.55);
+  border-radius: 50px;
+  padding: 10px 22px;
+  color: var(--gold-light);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  backdrop-filter: blur(6px);
+}
+.affil-badge svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+.affil-badge strong {
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+/* ============================================
+   COURSE CARD — SVG ICON
+   ============================================ */
+.course-icon-svg {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 16px;
+}
+.course-icon-svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================
+   INSTRUMENTS — SVG overhaul
+   ============================================ */
+.instruments-wheel {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+.instrument-item {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(212,160,23,.25);
+  border-radius: var(--radius);
+  padding: 28px 16px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+  cursor: default;
+  width: 100%;
+}
+.instrument-item:hover {
+  background: rgba(212,160,23,.15);
+  border-color: var(--gold);
+  transform: scale(1.06);
+}
+.inst-svg {
+  width: 64px;
+  height: 64px;
+}
+.inst-svg svg {
+  width: 100%;
+  height: 100%;
+}
+.instrument-item span:nth-child(2) {
+  color: var(--cream);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.inst-hindi {
+  font-family: var(--font-hindi);
+  color: var(--gold-light) !important;
+  font-size: 0.88rem !important;
+  font-weight: 400 !important;
+}
+
+/* ============================================
+   PRAYAG SANGEET SAMITI — AFFILIATION BANNER
+   ============================================ */
+.prayag-affil-badge-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.prayag-affil-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(212,160,23,0.12), rgba(232,98,26,0.08));
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  padding: 14px 28px;
+  color: var(--deep-red);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  box-shadow: 0 4px 20px rgba(212,160,23,0.18);
+  text-align: center;
+}
+.prayag-affil-badge svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+/* ============================================
+   PRAYAG COURSES SECTION
+   ============================================ */
+.prayag-courses { background: var(--cream); }
+
+.prayag-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.prayag-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px 22px 28px;
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--gold);
+  position: relative;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.prayag-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.prayag-card.featured-prayag {
+  background: linear-gradient(135deg, var(--deep-brown), #6B1A0A);
+  border-top-color: var(--gold-light);
+}
+.prayag-card.featured-prayag h3,
+.prayag-card.featured-prayag > p {
+  color: var(--cream);
+}
+.prayag-card.featured-prayag .prayag-hindi { color: var(--gold-light); }
+.prayag-card.featured-prayag .prayag-level {
+  background: rgba(212,160,23,0.2);
+  color: var(--gold-light);
+}
+.prayag-card.featured-prayag .prayag-features li {
+  color: rgba(253,246,227,0.85);
+  border-bottom-color: rgba(212,160,23,0.2);
+}
+.prayag-badge {
+  position: absolute;
+  top: -13px;
+  right: 20px;
+  background: var(--gold);
+  color: var(--deep-brown);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.prayag-level {
+  display: inline-block;
+  background: var(--cream-dark);
+  color: var(--saffron);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  width: fit-content;
+}
+.prayag-icon {
+  font-size: 2.2rem;
+  margin-bottom: 2px;
+}
+.prayag-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--deep-red);
+}
+.prayag-hindi {
+  font-family: var(--font-hindi);
+  color: var(--saffron);
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+.prayag-card > p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.prayag-features {
+  list-style: none;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.prayag-features li {
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  padding: 5px 0 5px 20px;
+  position: relative;
+  border-bottom: 1px solid var(--cream-dark);
+}
+.prayag-features li:last-child { border-bottom: none; }
+.prayag-features li::before {
+  content: '♩';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+@media (max-width: 1100px) {
+  .prayag-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .prayag-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   HERO ENTRANCE ANIMATIONS
+   ============================================ */
+.hero-anim {
+  opacity: 0;
+  animation: heroFadeUp 0.8s ease forwards;
+  animation-delay: var(--d, 0s);
+}
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================
+   SCROLL PROGRESS BAR
+   ============================================ */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold), var(--saffron));
+  z-index: 2000;
+  transition: width 0.1s linear;
 }
 
 /* ============================================
